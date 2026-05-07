@@ -8,6 +8,7 @@
     <suppress files="build[\\/].*" checks=".*"/>
     <suppress files="target[\\/].*" checks=".*"/>
     <suppress files=".+\.(jar|git|ico|p12|gif|jks|jpg|svg|log)" checks="NoHttp"/>
-    <!-- Added suppression for SonarQube report -->
-    <suppress files="\.scannerwork/report-task\.txt" checks="NoHttp"/>
+    <!-- Added suppression for SonarQube scanner output -->
+    <suppress files="\.scannerwork[\\/].*" checks="NoHttp"/>
 </suppressions>
+
