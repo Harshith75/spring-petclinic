@@ -11,6 +11,8 @@
   <groupId>org.springframework.samples</groupId>
   <artifactId>spring-petclinic</artifactId>
   <version>4.0.0-SNAPSHOT</version>
+  <packaging>war</packaging>
+
 
   <name>petclinic</name>
 
