@@ -1,4 +1,4 @@
-FROM tomcat:9.0
-COPY $WORKSPACE/target/*.war /usr/local/tomcat/webapps/
+FROM openjdk:8-jre-alpine
 EXPOSE 8080
-
+COPY target/*.war /usr/bin/spring-petclinic.war
+ENTRYPOINT ["java","-jar","/usr/bin/spring-petclinic.war","--server.port=8080"]
